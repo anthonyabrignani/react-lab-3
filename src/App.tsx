@@ -1,26 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import GitHubUserSummary from "./component/GitHubUserSummary";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <GitHubUserSummary />
     </div>
   );
 }
 
 export default App;
+
+
+// everything is user lookup - state: username (pass down as prop)
+
+// next biggest is user summary - api calls happen here state: api results for user info, api results for user repo array (pass down as prop)
+
+// smallest is solo repo component 

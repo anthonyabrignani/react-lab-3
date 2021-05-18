@@ -1,0 +1,16 @@
+.PokemonList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.PokemonList h1 {
+    text-shadow: 1.5px 1.5px gray;
+}
+
+.PokemonList li {
+    text-shadow: 1.2px 1.2px lightgray;
+}
